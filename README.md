@@ -25,3 +25,9 @@ https://ttp.cbp.dhs.gov/schedulerapi/locations/?temporary=false&inviteOnly=false
 
 next appointment,
 https://ttp.cbp.dhs.gov/schedulerapi/slots?orderBy=soonest&limit=1&locationId=9300
+
+
+## Other Solutions
+
+https://github.com/Drewster727/goes-notify/blob/master/goes-notify.py
+
