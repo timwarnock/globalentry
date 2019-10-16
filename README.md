@@ -1,6 +1,8 @@
 # globalentry
 
-Are you fucking kidding me?
+So you went to https://ttp.cbp.dhs.gov, applied for Global Entry, paid the fee, and are now "conditionally approved". Congratulations! But you just found out that the next available interview appointment is in 6-months in a city far outside your home. You do some research only to discover that the interviews have been longer and longer delays, with year-over-year excuses. You read about this on travel websites and the recommendation is to monitor the nearest Global Entry enrollment center in case a spot becomes available. Some people in the comment mention scripts. You are technically savvy, so here you are!
+
+All this to avoid the long lines in passport control and customs.
 
 ## Proposed Interface
 
