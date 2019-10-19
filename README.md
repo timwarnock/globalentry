@@ -1,38 +1,27 @@
 # globalentry
 
-So you went to https://ttp.cbp.dhs.gov, applied for Global Entry, paid the fee, and are now "conditionally approved". Congratulations! But you just found out that the next available interview appointment is in 6-months in a city far outside your home. You do some research only to discover longer and longer delays for these interview appointments, with year-over-year excuses. You read about this on travel websites and the recommendation is to monitor the nearest Global Entry enrollment center in case a spot becomes available. Some people in the comment section mention scripts. You are technically savvy, so here you are!
+So you went to https://ttp.cbp.dhs.gov, applied for Global Entry, paid the fee, and are now "conditionally approved". Congratulations! But you just found out that the next available interview appointment is in 6-months in a city far outside your home. You do some research only to discover longer and longer delays for these interview appointments, with year-over-year excuses. So you read about this on travel websites and the recommendation is to monitor the nearest Global Entry enrollment center in case a spot becomes available. Some people in the comment section mention scripts. You are technically savvy, so here you are!
 
-All this to avoid the long lines in passport control and customs.
+All this to avoid the long lines in passport control and customs!
 
-## Proposed Interface
+
+## Python Module
 
 ```python
 >>> 
 >>> import globalentry
 >>> sites = globalentry.locations.filter('San Diego')
->>> len(sites)
-1
 >>> sites[0]['id']
 5002
 >>> 
 >>> globalentry.appointments.by_location_id(5002)
 datetime.datetime(2020, 3, 3, 8, 45)
 >>> 
+>>> appts = globalentry.appointments.by_locations(['San Diego', 'Los Angeles'])
+>>> appts[0]['next_appointment']
+datetime.datetime(2019, 10, 28, 9, 15)
 >>> 
 ```
-
-## Simplify...
-
-locations,
-https://ttp.cbp.dhs.gov/schedulerapi/slots/asLocations?minimum=1&filterTimestampBy=before&timestamp=2019-11-24&serviceName=Global%20Entry
-
-
-https://ttp.cbp.dhs.gov/schedulerapi/locations/?temporary=false&inviteOnly=false&operational=true&serviceName=Global%20Entry
-
-
-
-next appointment,
-https://ttp.cbp.dhs.gov/schedulerapi/slots?orderBy=soonest&limit=1&locationId=9300
 
 
 ## Other Solutions
