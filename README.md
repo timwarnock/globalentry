@@ -25,7 +25,10 @@ datetime.datetime(2020, 3, 3, 8, 45)
 
 locations,
 https://ttp.cbp.dhs.gov/schedulerapi/slots/asLocations?minimum=1&filterTimestampBy=before&timestamp=2019-11-24&serviceName=Global%20Entry
-https://ttp.cbp.dhs.gov/schedulerapi/locations/?temporary=false&inviteOnly=false&operational=true&serviceName=Global Entry
+
+
+https://ttp.cbp.dhs.gov/schedulerapi/locations/?temporary=false&inviteOnly=false&operational=true&serviceName=Global%20Entry
+
 
 
 next appointment,
