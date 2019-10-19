@@ -1,0 +1,7 @@
+[ {
+  "locationId" : 9300,
+  "startTimestamp" : "2020-03-02T10:45",
+  "endTimestamp" : "2020-03-02T11:00",
+  "active" : true,
+  "duration" : 15
+} ]

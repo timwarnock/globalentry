@@ -9,11 +9,14 @@ All this to avoid the long lines in passport control and customs.
 ```python
 >>> 
 >>> import globalentry
->>> ec = globalentry.locations()
->>> len(ec)
-140
->>> globalentry.next_appointment('San Diego')
-datetime.datetime(2019, 3, 3, 8, 45)
+>>> sites = globalentry.locations.filter('San Diego')
+>>> len(sites)
+1
+>>> sites[0]['id']
+5002
+>>> 
+>>> globalentry.appointments.by_location_id(5002)
+datetime.datetime(2020, 3, 3, 8, 45)
 >>> 
 >>> 
 ```
