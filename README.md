@@ -7,10 +7,23 @@ All this to avoid the long lines in passport control and customs!
 
 ## Shell Script
 
+Simply specify location filters on the command-line, e.g.,
+
 ```shell
-$ ./find_appointments.py 
-5223    : 2019-10-22 17:15:00   : Derby Line Enrollment Center
-9300    : 2020-03-02 10:45:00   : Warwick, RI Enrollment Center
+$ ./find_appointments.py CA
+2019-11-21 11:15:00     : San Francisco Global Entry Enrollment Center (5446)
+2019-12-03 06:15:00     : Calexico Enrollment Center (5006)
+2020-01-14 06:00:00     : San Diego -Otay Mesa Enrollment Center (5002)
+2020-06-09 14:00:00     : Los Angeles -Long Beach Seaport  (8920)
+None    : Los Angeles International Global Entry EC (5180)
+```
+
+You can add multiple location filters, but please escape spaces, e.g.,
+
+```shell
+$ ./find_appointments.py Calexico  San\ Diego
+2019-12-03 06:15:00     : Calexico Enrollment Center (5006)
+2020-01-14 06:00:00     : San Diego -Otay Mesa Enrollment Center (5002)
 ```
 
 ## Python Module

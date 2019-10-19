@@ -52,6 +52,7 @@ def by_locations(filters):
     for loc in locs:
         next_appt_dt = by_location_id(loc['id'])
         appts.append({'name':loc['name'], 'id': loc['id'], 'next_appointment': next_appt_dt})
+    appts.sort(key=lambda x: x['next_appointment'] or datetime.datetime.max)
     return appts
 
 
