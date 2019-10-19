@@ -18,7 +18,7 @@ $ ./find_appointments.py CA
 None    : Los Angeles International Global Entry EC (5180)
 ```
 
-You can add multiple location filters, but please escape spaces, e.g.,
+You can add multiple location filters (be as specific as you want), but you'll need to escape spaces, e.g.,
 
 ```shell
 $ ./find_appointments.py Calexico  San\ Diego
