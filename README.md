@@ -5,6 +5,14 @@ So you went to https://ttp.cbp.dhs.gov, applied for Global Entry, paid the fee, 
 All this to avoid the long lines in passport control and customs!
 
 
+## Shell Script
+
+```shell
+$ ./find_appointments.py 
+5223    : 2019-10-22 17:15:00   : Derby Line Enrollment Center
+9300    : 2020-03-02 10:45:00   : Warwick, RI Enrollment Center
+```
+
 ## Python Module
 
 ```python
